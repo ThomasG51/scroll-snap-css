@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh; /* Don't forget to give a size to your container */
+    overflow: auto; /* Important : otherwise the snap doesn't work */
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section:nth-child(1) {
+    background-color: #6495ed;
+}
+
+section:nth-child(2) {
+    background-color: #eddb64;
+}
+
+section:nth-child(3) {
+    background-color: #ed6464;
+}
+
+section:nth-child(4) {
+    background-color: #79ed64;
+}
+
+.scroll-mandatory-y {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-align-start {
+    scroll-snap-align: start;
+}
